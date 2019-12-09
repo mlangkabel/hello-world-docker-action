@@ -5,13 +5,13 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-        
+
     name: A job to say hello
 
     steps:
     - name: Hello world action step
       id: hello
-      uses: mlangkabel/hello-world-docker-action@v1
+      uses: mlangkabel/hello-world@v1
       with:
         who-to-greet: 'Mona the Octocat'
     # Use the output from the `hello` step
