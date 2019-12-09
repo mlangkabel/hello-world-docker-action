@@ -1,0 +1,13 @@
+language: cpp
+
+
+services:
+  - docker
+
+
+install:
+  - docker build -t coatisoftware/test:1 .
+
+
+script:
+  - docker run coatisoftware/test:1 /entrypoint.sh World
